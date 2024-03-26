@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS Layout */
+
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #a8ba9a;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+#app {
+	background-color: #247BA0;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	display: grid;
+	grid-template-rows: auto 1fr;
+	width: 90%;
+	max-width: 600px;
+	padding: 80px;
+	gap: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.container {
+	display: grid;
+	justify-content: center;
+  	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+textarea {
+	justify-content: center;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	width: 80%;
+  }
+
+/* Opsional Custom Element */
+.note {
+	text-align: center;
+	background-color: #4A314D;
+	border-radius: 10px;
+	padding: 15px;
+	position: relative;
+}
+
+.note h2 {
+	margin-top: 0;
+	color: #247BA0;
+}
+
+.note p {
+	color: #1A090D;
+}
+
+/* Edit Button */
+button {
+	background-color: #f67904;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px 20px;
+	
+	/* CSS Hover */
+	transition: 0.2s;
+	
+	&:hover {
+	  background-color: #A8BA9A;
+	}
+  }
+
+.note-actions {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.note-actions button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 0;
+	margin-right: 5px;
+	color: #a8ba9a;
+}
+
+.note-actions button:hover {
+	color: #4A314D;
+}
+
